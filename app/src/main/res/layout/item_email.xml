@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <com.github.pavlospt.roundedletterview.RoundedLetterView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_view"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimary"
+        app:rlv_backgroundColorValue="#000"
+        android:layout_centerVertical="true"
+        app:rlv_titleSize="25dp"
+        app:rlv_titleText="A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_view"
+        android:layout_toEndOf="@id/img_view"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Sam"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+            <TextView
+                android:id="@+id/tv_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                tools:text="Weekend Adventure"/>
+            <TextView
+                android:id="@+id/tv_item_desk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Lets go fishing with John sdsdssdsdsdsdsdsdsdsdsdsdsdssdsdsd"/>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_item_time"
+            android:textSize="10sp"
+            android:text="10:42 AM"
+
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:id="@+id/btn_fav"
+            android:layout_marginTop="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_star_border_black_24dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
